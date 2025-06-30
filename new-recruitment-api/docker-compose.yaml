@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    container_name: recruitment-api
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: always
